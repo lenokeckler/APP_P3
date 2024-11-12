@@ -1,0 +1,308 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Estilos para cada producto */
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilos para el nombre y precios */
+.product-name {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.original-price {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.current-price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+/* Estilo para la fecha de fin de oferta */
+.sale-end {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+/* Columna izquierda para información del producto detail */
+.additional-info {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(70, 62, 62, 0.1);
+    color: #e1e1e1;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen del producto dentro de detail*/
+.detail-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Información del producto */
+.detail-info {
+    text-align: center;
+}
+
+.detail-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #e1e1e1;
+}
+
+.detail-price {
+    color: #1e98df;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.detail-description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #b5b5b5;
+}
+
+/* Columna derecha para la lista de plataformas */
+.platform-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la tarjeta de cada plataforma */
+.platform-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #313131; /*color del donde la tabla de productos detail*/
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.platform-item:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Precio de la plataforma */
+.platform-price {
+    flex: 1;
+    color: #36ce3b;
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Descuento */
+.platform-discount {
+    flex: 0.5;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* Fecha de finalización de la oferta */
+.platform-sale-end {
+    flex: 2;
+    color: #cccccc;
+    font-size: 0.85em;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Para cambiar el tamaño del los logos */
+.platform-logo {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px; /* Para separar la imagen del texto */
+}
+
+
+/* Buscador de la página principal */
+#search-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+#best-discount-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#best-discount-button:hover {
+    background-color: #45a049;
+}
+
+
+#show-all-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#show-all-button:hover {
+    background-color: #0069d9;
+}
+
+
+/* Estilo para la sección de HowLongToBeat */
+.hltb-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    color: #e1e1e1;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    transform: translateX(-10px);
+}
+
+/* Estilo para el título de HowLongToBeat */
+.hltb-info h2 {
+    margin-top: 0;
+    font-size: 1.3em; /* Aumentar el tamaño del título */
+    color: #ffffff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Estilo para cada línea de duración */
+.hltb-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.1em; /* Aumentar el tamaño del texto */
+}
+
+/* Estilo para el valor de horas */
+.hltb-info span {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-right: 7px;
+}
+
+/* Espacio y animación para el ícono 🎮 */
+.hltb-info p::after {
+    content: " 🎮";
+    font-size: 1.2em; /* Tamaño del emoji */
+    margin-left: 8px; /* Espacio entre "hours" y el ícono */
+    animation: bounce 1.5s infinite; /* Añadir animación */
+}
+
+/* Animación de rebote para el ícono */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}

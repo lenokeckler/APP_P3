@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Columna izquierda: detalles principales del producto -->
+        <div class="additional-info">
+            <!-- Imagen del producto cargada dinámicamente desde un URL -->
+            <img id="detail-image" src="" alt="Imagen del producto" class="detail-image">
+            
+            <!-- Información del producto -->
+            <div class="detail-info">
+                <!-- Título del producto -->
+                <h1 class="detail-title" id="detail-product-name">Nombre del Producto</h1>
+                
+                <!-- Precio del producto -->
+                <p class="detail-price" id="detail-product-price">$Precio</p>
+                
+                <!-- Descripción del producto -->
+                <p class="detail-description" id="detail-product-description">Descripción del producto aquí...</p>
+            </div>
+
+            <!-- Duración del juego: nueva sección para HowLongToBeat -->
+            <div class="hltb-info">
+                <h2>HowLongToBeat</h2>
+                <p>Main Story:   <span id="hltb-main">N/A</span> hours </p>
+                <p>Main + Extras:   <span id="hltb-main-extra">N/A</span> hours </p>
+                <p>Completionist:   <span id="hltb-completionist">N/A</span> hours </p>
+            </div>
+        </div>
+
+        <!-- Columna derecha: lista de plataformas -->
+        <div class="platform-list" id="detail-platform-list">
+            <!-- Ejemplo de tarjeta de plataforma (se generará dinámicamente) -->
+            <div class="platform-item">
+                <img src="platform-logo.png" alt="Logo de la plataforma" class="platform-logo">
+                <div class="platform-price">$19.99</div>
+                <div class="platform-discount">20% OFF</div>
+                <div class="platform-sale-end">Ends in 3 days</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript que carga los datos -->
+    <script src="detail.js"></script>
+</body>
+</html>

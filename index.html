@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leno</title>
+    <link rel="stylesheet" href="web/main/styles.css">
+</head>
+<body>
+    <h1>Games</h1>
+    <!-- Contenedor de búsqueda y filtro -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar juegos por nombre...">
+        <button id="best-discount-button">Mejores Descuentos</button>
+        <button id="show-all-button">Mostrar Todos</button>
+    </div>
+    <div id="data-container"></div> <!-- Contenedor para mostrar los datos -->
+    
+    <script src="web/main/script.js"></script>
+    <script>
+        // Guardar el título original
+        const originalTitle = document.title;
+
+        // Detectar cambios de visibilidad de la página
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                document.title = "No te vayas 🥺";
+            } else {
+                document.title = originalTitle; 
+            }
+        });
+    </script>
+</body>
+</html>
